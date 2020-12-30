@@ -9,7 +9,6 @@ strong {
 }
 .main-content {
     position: relative;
-    top: 64px;
 }
 a {
     text-decoration: none;
@@ -20,9 +19,18 @@ h2 {
     margin: 24px;
 }
 h3 {
+    font-size: 40px;
+}
+h4 {
     font-size: 32px;
     line-height: 36px;
     margin: 24px;
+}
+h5 {
+    font-size: 24px;
+}
+h6 {
+    font-size: 16px;
 }
 .banner {
     width: 60%;
@@ -42,7 +50,6 @@ background-color: white;
     display: inline-block;
     height: 32px;
     line-height: 32px;
-    padding-left: px;
     text-decoration: none;
 }
 .logo img {
@@ -96,11 +103,40 @@ strong {
     text-align: center;
     font-size: 24px;
 }
+.button a {
+    display: inline-block;
+    width: 100%;
+    color: white;
+}
 
 /* Info Section */
 .info {
     background-color: white;
-    display: flex;
+    display: inline-flex;
     padding: 32px 24px;
     height: auto;
+}
+#info-banner {
+    width: 100%;
+}
+.left-side {
+    display: block;
+    width: 60%;
+}    
+.info h3 {
+    font-weight: bold;
+}
+.info-features {
+    width: 40%;
+    border-left: 1px;
+}
+.feature-box {
+    display: flex;
+}
+.info-images {
+    width: 35%;
+    height: auto;
+}
+.feature-box-info {
+    width: 65%;
 }
