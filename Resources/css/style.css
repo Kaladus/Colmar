@@ -2,7 +2,8 @@
 
 html {
    font-family: Roboto, sans-serif; 
-   overflow-x: hidden;
+   overflow-x:;
+   width: 100%:
 }
 strong {
     font-weight: bold;
@@ -30,7 +31,7 @@ h5 {
     font-size: 24px;
 }
 h6 {
-    font-size: 16px;
+    font-size: 12px;
 }
 .banner {
     width: 60%;
@@ -123,12 +124,19 @@ strong {
     display: block;
     width: 60%;
 }    
+.left-side-content h3 {
+    margin: 34px 0 24px;
+}
+.left-side-content h6 {
+    margin-top: 34px;
+}
 .info h3 {
     font-weight: bold;
 }
 .info-features {
     width: 40%;
     border-left: 1px;
+    margin-left: 24px;
 }
 .feature-box {
     display: flex;
@@ -136,7 +144,63 @@ strong {
 .info-images {
     width: 35%;
     height: auto;
+    padding: 16px;
+}
+#info-images-1 {
+    padding-top: 0;
 }
 .feature-box-info {
     width: 65%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+.feature-box-info h5 {
+    margin: 8px 0;
+}
+.feature-box-info p {
+    margin: 8px 0;
+    line-height: 24px;
+}
+.feature-box-info a {
+    margin: 8px 0;
+    color: blue;
+}
+
+/* Learn Section */
+.learn-section h3 {
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    padding-top: 32px;
+    background-color: rgba(128, 128, 128, 0.315);
+}
+.learn-container {
+    padding: 32px 72px 0;
+    display: flex;
+    flex-flow: wrap;
+    justify-content:center; 
+    width: auto;
+    background-color: rgba(128, 128, 128, 0.315);
+}
+.learn-box {
+    width: 25%;
+    margin: 0 16px 32px;
+    background-color: white;
+}
+.learn-box-text {
+    padding: 16px 16px 24px;
+}
+.learn-box img {
+    height: auto;
+    width: 100%;
+}
+.learn-box h5 {
+    margin-bottom: 8px;
+}
+.learn-box p {
+    margin-top: 8px;
+}
+
+/* Thesis Section */
