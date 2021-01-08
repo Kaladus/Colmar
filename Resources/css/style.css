@@ -3,7 +3,7 @@
 html {
    font-family: Roboto, sans-serif; 
    overflow-x:;
-   width: 100%:
+   width: 100%;
 }
 strong {
     font-weight: bold;
@@ -204,3 +204,60 @@ strong {
 }
 
 /* Thesis Section */
+.thesis-section h3 {
+    font-weight: bold;
+    text-align: center;
+    margin: 32px;
+}
+.thesis-content {
+    display: inline-flex;
+}
+.thesis-left-side {
+    width: 60%;
+    margin: 0 24px 32px;
+}
+.thesis-left-side h5 {
+    margin-bottom: 8px;
+}
+.thesis-content video {
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+}
+.thesis-right-side {
+    display: block;
+    width: 40%;
+}
+.thesis-right-side img {
+    width: 35%;
+    height: auto;
+    margin: 16px;
+}
+.right-side-box {
+    display: flex;
+}
+.right-side-box-content {
+    width: 65%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-right: 1em;
+}
+.right-side-box-content h5 {
+    margin-bottom: 16px;
+    line-height: 1.25em;
+}
+
+/* footer section */
+.footer {
+    border-top: solid 1px rgba(128, 128, 128, 0.315);
+    border-width: 100%;
+    padding: 16px 24px 48px;
+}
+.footer-left {
+    float: left;
+}
+.footer-right {
+    font-size: 12px;
+    float: right;
+}
