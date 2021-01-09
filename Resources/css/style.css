@@ -2,7 +2,7 @@
 
 html {
    font-family: Roboto, sans-serif; 
-   overflow-x:;
+   overflow-x: hidden;
    width: 100%;
 }
 strong {
@@ -18,6 +18,8 @@ h2 {
     font-size: 48px;
     font-weight: bold;
     margin: 24px;
+    word-spacing: .0125em;
+    line-height: 1.25em;
 }
 h3 {
     font-size: 40px;
@@ -81,6 +83,22 @@ span {
 strong {
     color: black;
 }
+@media only screen and (min-width:761px) {
+    .mobile-header {
+        display: none;
+    }
+}
+/* Mobile Header */
+@media only screen and (max-width: 760px) {
+    .desktop-header {
+        display: none;
+    }
+    .mobile-header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
 
 /* Sign Up Section */
 .sign-up {
@@ -97,7 +115,7 @@ strong {
 .button {
     background-color: black;
     color: white;
-    padding: 8px;
+    padding: 16px;
     width: auto;
     margin: 24px;
     margin-top: 48px;
@@ -108,6 +126,39 @@ strong {
     display: inline-block;
     width: 100%;
     color: white;
+}
+/* Tablet sign up section */
+@media only screen and (min-width:761px) and (max-width:1060px) {
+    h2 {
+        font-size: 32px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+}
+/* Mobile sign up section */
+@media only screen and (max-width:760px) {
+    .sign-up {
+        display:block;
+        padding: 0px;
+    }
+    .banner {
+        width:100%;
+        height: auto;
+    }
+    .sign-up h2 {
+        margin: 0;
+    }
+    .sign-up h4 {
+        margin: 32px 0 0;
+    }
+    .sign-up .content {
+        padding: 32px 16px;
+        margin-left: 0;
+    }
+    .sign-up .button {
+        margin: 24px 0 0;
+    }
 }
 
 /* Info Section */
@@ -176,6 +227,9 @@ strong {
     padding-top: 32px;
     background-color: rgba(128, 128, 128, 0.315);
 }
+.learn-section p {
+    line-height: 1.25em;
+}
 .learn-container {
     padding: 32px 72px 0;
     display: flex;
@@ -197,7 +251,7 @@ strong {
     width: 100%;
 }
 .learn-box h5 {
-    margin-bottom: 8px;
+    margin-bottom: 24px;
 }
 .learn-box p {
     margin-top: 8px;
@@ -261,3 +315,5 @@ strong {
     font-size: 12px;
     float: right;
 }
+
+
