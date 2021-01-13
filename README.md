@@ -1,1 +1,1 @@
-# ColmarAcademy
+# Colmar
