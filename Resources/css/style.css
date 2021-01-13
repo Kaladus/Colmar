@@ -264,7 +264,7 @@ strong {
 .feature-box-info a:hover {
     color: #f32f28;
 }
-@media only screen and (min-width:500px) {
+@media only screen and (min-width:501px) {
     .mobile-info-images {
         display:none;
     }
@@ -303,6 +303,7 @@ strong {
     .info-images {
         padding-left: 0;
         min-width: 150px;
+        width: 37%;
     }
     .feature-box {
         width: 100%;
@@ -312,7 +313,7 @@ strong {
         height:auto;
     }
     .feature-box-info {
-        width: 100%;
+        width: ;
         margin:0;
     }
     .feature-box-info a {
