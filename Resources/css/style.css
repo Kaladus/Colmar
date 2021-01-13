@@ -17,6 +17,9 @@ strong {
 a {
     text-decoration: none;
 }
+p {
+    font-family: 'roboto';
+}
 h2 {
     font-size: 48px;
     font-weight: bold;
@@ -32,9 +35,11 @@ h4 {
     font-size: 32px;
     line-height: 36px;
     margin: 24px;
+    color: rgba(0, 0, 0, 0.692);
 }
 h5 {
     font-size: 24px;
+    font-family: 'roboto';
 }
 h6 {
     font-size: 12px;
@@ -133,6 +138,7 @@ strong {
 }
 .sign-up h4 {
     font-style: italic;
+    font-family: 'Roboto';
 }
 .sign-up .banner {
     margin-right: 16px;
@@ -147,6 +153,7 @@ strong {
     text-align: center;
     font-size: 24px;
     transition: background-color 400ms;
+    font-family: 'Roboto';
 }
     .button a {
     display: inline-block;
@@ -164,6 +171,9 @@ strong {
     }
     h4 {
         font-size: 16px;
+    }
+    .sign-up {
+        padding-right: 24px;
     }
 }
 /* Mobile sign up section */
@@ -188,6 +198,12 @@ strong {
     }
     .sign-up .button {
         margin: 24px 0;
+    }
+}
+@media only screen and (min-width:501px) and (max-width:760px) {
+    .content .button {
+        width: 60%;
+        margin: 24px auto;
     }
 }
 @media only screen and (max-width:350px) {
@@ -249,6 +265,7 @@ strong {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: auto;
 }
 .feature-box-info h5 {
     margin: 8px 0;
@@ -314,7 +331,6 @@ strong {
         height:auto;
     }
     .feature-box-info {
-        width: ;
         margin:0;
     }
     .feature-box-info a {
