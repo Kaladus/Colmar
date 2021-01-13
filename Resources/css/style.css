@@ -232,6 +232,7 @@ strong {
 }
 .feature-box {
     display: flex;
+    align-items: flex-start;
 }
 .info-images {
     width: 35%;
