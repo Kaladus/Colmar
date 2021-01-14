@@ -30,9 +30,10 @@ h2 {
 }
 h3 {
     font-size: 40px;
+    color: rgba(0, 0, 0, 0.836);
 }
 h4 {
-    font-size: 32px;
+    font-size: 24px;
     line-height: 36px;
     margin: 24px;
     color: rgba(0, 0, 0, 0.692);
@@ -69,15 +70,14 @@ border-bottom: solid 1px rgba(128, 128, 128, 0.315);
     height: 32px;
     line-height: 32px;
     text-decoration: none;
+    font-size: 20px;
+    font-family: 'raleway';
 }
 .logo img {
     float: left;
     margin-left: 24px;
 }
-.logo p {
-    display: inline;
-    vertical-align: center;
-}
+
 nav {
     float: right;
     line-height: 32px;
@@ -93,23 +93,26 @@ nav li a {
     margin-left: 16px;
     padding-bottom: 20px;
     transition: border-bottom 150ms 25ms;
+    font-size: 12px;
+    font-family: 'Roboto';
+    font-weight: bold;
 }
 nav li a:hover {
     border-bottom: solid 2px #F9564F;
 }
-span {
+header span {
     color: #f74842;
 }
 strong {
     color: black;
 }
-@media only screen and (min-width:761px) {
+@media only screen and (min-width:601px) {
     .mobile-header {
         display: none;
     }
 }
 /* Mobile Header */
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 600px) {
     .desktop-header {
         display: none;
     }
@@ -128,7 +131,7 @@ strong {
 
 /* Sign Up Section */
 .sign-up {
-    background-color:#2A83FF;
+    background-color:#5e499d;
     display: flex;
     padding: 32px 72px 32px 24px;
     margin-top: 64px;
@@ -137,8 +140,12 @@ strong {
     width: auto;
 }
 .sign-up h4 {
-    font-style: italic;
-    font-family: 'Roboto';
+    font-family: 'work sans';
+    font-weight: 400;
+    color: #F9F871;
+    font-size: 16px;
+    margin-top: 32px;
+    line-height: 1.5em;
 }
 .sign-up .banner {
     margin-right: 16px;
@@ -147,15 +154,16 @@ strong {
     background-color: #F9564F;
     color: white;
     padding: 16px;
-    width: auto;
+    width: 60%;
     margin: 24px;
-    margin-top: 48px;
+    margin-top: 38px;
     text-align: center;
     font-size: 24px;
     transition: background-color 400ms;
     font-family: 'Roboto';
+    
 }
-    .button a {
+.button a {
     display: inline-block;
     width: 100%;
     color: white;
@@ -165,45 +173,69 @@ strong {
 }
 
 /* Tablet sign up section */
-@media only screen and (min-width:761px) and (max-width:1060px) {
+@media only screen and (min-width:761px) and (max-width:1110px) {
     h2 {
         font-size: 32px;
     }
     h4 {
-        font-size: 16px;
+        font-size: 18px;
+        font-weight: 500;
     }
     .sign-up {
         padding-right: 24px;
     }
+    .content {
+        justify-content: center;
+    }
+    .content .button {
+        width: 60%;
+        margin: 24px auto 0;
+    }
 }
 /* Mobile sign up section */
-@media only screen and (max-width:760px) {
+@media only screen and (min-width:501px) and (max-width:850px) {
+    .sign-up .content {
+        padding: 32px 24px;
+    }
+}
+@media only screen and (max-width:850px) {
     .sign-up {
         display:block;
         padding: 0px;
     }
     .banner {
-        width:100%;
+        width: 100%;
         height: auto;
     }
     .sign-up h2 {
         margin: 0;
+        font-size: 40px;
     }
     .sign-up h4 {
         margin: 32px 0 0;
     }
     .sign-up .content {
-        padding: 32px 16px;
         margin-left: 0;
     }
     .sign-up .button {
-        margin: 24px 0;
+        margin: 24px auto 0;
     }
 }
-@media only screen and (min-width:501px) and (max-width:760px) {
+@media only screen and (min-width:506px) and (max-width:760px) {
     .content .button {
         width: 60%;
-        margin: 24px auto;
+        margin: 24px auto 0;
+    }
+}
+@media only screen and (max-width:505px) {
+    .button {
+        width: auto;
+    }
+    .sign-up .content {
+        padding: 32px 16px;
+    }
+    .sign-up h4 {
+        font-size: 13px;
     }
 }
 @media only screen and (max-width:350px) {
@@ -219,7 +251,7 @@ strong {
 .info {
     background-color: white;
     display: inline-flex;
-    padding: 32px 32px 32px 24px;
+    padding: 0 8px 0 24px;
     height: auto;
 }
 #info-banner {
@@ -228,12 +260,14 @@ strong {
 .left-side {
     display: block;
     width: 60%;
+    padding: 32px 0 32px;
 }    
 .left-side-content h3 {
     margin: 34px 0 24px;
 }
 .left-side-content p {
-    font-style: italic;
+    font-family: 'work sans';
+    line-height: 1.5em;
 }
 .left-side-content h6 {
     margin-top: 34px;
@@ -245,16 +279,29 @@ strong {
     width: 40%;
     border-left: 1px;
     margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+    border-left: solid 1px rgba(128, 128, 128, 0.315);
+    padding-top: 32px;
 }
 .feature-box {
     display: flex;
-    align-items: flex-start;
+    border-left: solid px rgba(128, 128, 128, 0.315);
+    border-bottom: solid 1px rgba(128, 128, 128, 0.315);
+    margin-bottom: 2px;
+}
+#fb2,#fb3 {
+    border-top: solid 1px rgba(128, 128, 128, 0.315);
+}
+#fb3 {
+    border-bottom: 0;
 }
 .info-images {
     width: 35%;
     height: 35%;
     height: auto;
     padding: 16px;
+    align-items: flex-start;
 }
 #info-images-1 {
     padding-top: 0;
@@ -273,14 +320,16 @@ strong {
 .feature-box-info p {
     margin: 8px 0;
     line-height: 24px;
+    font-weight: 300;
 }
 .feature-box-info a {
     margin: 8px 0;
     color: #f74842;
-    transition: color;
+    transition: text-underline-offset;
+    text-underline-offset: .4em;
 }
 .feature-box-info a:hover {
-    color: #f32f28;
+    text-decoration: underline;
 }
 @media only screen and (min-width:501px) {
     .mobile-info-images {
@@ -288,6 +337,35 @@ strong {
     }
 }
 /* Mobile Info Section */
+@media only screen and (min-width: 950px) {
+    .feature-box {
+        transition: background-color 400ms ease-in;
+    }
+    .feature-box:hover {
+        background-color: rgba(0, 0, 0, 0.733);
+        color: white;
+    }
+}
+@media only screen and (max-width: 1185px) {
+    .left-side p {
+        font-size: 12px;
+    }
+    .left-side h3 {
+        font-size: 32px;
+    }
+    .left-side h6 {
+        font-size: 10px;
+    }
+}
+@media only screen and (min-width: 950px) and (max-width: 1150px) {
+    .feature-box p {
+        font-size: 14px;
+        font-weight: 300;
+    }
+     h5 {
+        font-size: 20px;
+    }
+}
 @media only screen and (max-width: 500px) {
     .info-images {
         display:none;
@@ -298,16 +376,27 @@ strong {
     .info {
         padding: 16px 16px 0;
     }
-}
-@media only screen and (min-width:950px) and (max-width:1010px) {
-    .info {
-        padding-right: 24px;
+    .feature-box-info a { 
+        margin-bottom: 64px;
+    }
+    .feature-box-info h5 {
+        margin-top: 32px;
     }
 }
+
 @media only screen and (min-width:501px) and (max-width:950px) {
     .info {
-        padding: 16px 16px 32px;
-        width: auto;
+        padding: 32px 24px 32px;
+        width:;
+    }
+    .info-features {
+        width:; 
+    }
+    .feature-box {
+        justify-content: center;
+    }
+    .feature-box-info a {
+        margin-bottom: 0;
     }
 }
 @media only screen and (max-width:950px) {
@@ -316,11 +405,13 @@ strong {
     }
     .info-features {
         margin:0;
-        width: auto;
+        width: 100%;
+        border-left: none;
     }
     .info-images {
         padding-left: 0;
         min-width: 150px;
+        max-width: 250px;
         width: 37%;
     }
     .feature-box {
@@ -332,9 +423,7 @@ strong {
     }
     .feature-box-info {
         margin:0;
-    }
-    .feature-box-info a {
-        margin-bottom: 64px;
+        width: 100%;
     }
 }
 /* Learn Section */
@@ -343,9 +432,20 @@ strong {
     width: 100%;
     text-align: center;
     padding-bottom: 32px;
+    color:rgba(0, 0, 0, 0.692);
+}
+.learn-section h6 {
+    font-size: 16px;
+    color: black;
+    font-family: 'Roboto';
+    font-weight: 300;
 }
 .learn-section p {
     line-height: 1.25em;
+    font-size: 14px;
+    margin-top: 16px;
+    color: black;
+    font-weight: 300;
 }
 .learn-container {
     padding: 32px 72px 0;
@@ -371,10 +471,7 @@ strong {
     margin-bottom: 24px;
     color: black;
 }
-.learn-box p {
-    margin-top: 8px;
-    color: black;
-}
+
 @media only screen and (min-width:661px) {
     .learn-box {
         transition: border-bottom 350ms 25ms;
@@ -385,21 +482,14 @@ strong {
 }
 
 /* Mobile Learn Section */
-@media only screen and (min-width:916px) and (max-width: 1120px) {
+
+@media only screen and (max-width: 1124px) {
     .learn-container {
-        padding-left: 24px;
-        padding-right: 24px;
+        padding: 32px 24px 0;
     }
     .learn-box {
-        margin: 0 8px 32px 8px;
-    }
-}
-@media only screen and (max-width: 915px) {
-    .learn-container {
-        padding: 32px 8px 0;
-    }
-    .learn-box {
-        margin: 0 8px 32px 8px;
+        margin: 0 16px 32px 16px;
+        flex: 40%;
     }
 }
 @media only screen and (max-width: 660px) {
@@ -417,7 +507,7 @@ strong {
         font-weight: 500;
         color: black;
     }
-    .learn-box p {
+    .learn-box p,h6 {
         display: none;
     }
     .learn-container {
@@ -444,6 +534,7 @@ strong {
 /* Thesis Section */
 .thesis-section {
     background-color: white;
+    padding-right: 8px
 }
 .thesis-section h3 {
     font-weight: bold;
@@ -461,7 +552,9 @@ strong {
     margin-bottom: 8px;
 }
 .thesis-left-side p {
-    font-style: italic;
+    font-size: 13px;
+    font-family: 'Work Sans';
+    line-height: 1.25em;
 }
 .thesis-content video {
     width: 100%;
@@ -476,25 +569,49 @@ strong {
     width: 35%;
     height: auto;
     margin: 16px;
+    align-items: flex-start;
+}
+.right-side-box#rsb1 {
+    border-left: solid 0px #F9564F;
+    border-bottom: solid 0px #F9564F;
+}
+.right-side-box#rsb2 {
+    border-bottom: solid 0px #F9564F;
+    border-right: solid 0px #F9564F;
 }
 .right-side-box {
     display: flex;
-    border-left: solid 0px #f74842;
-    transition: border-left 50ms;
+    border: solid 0px #f74842;
+    transition: background-color 400ms ease-in;
 }
-.right-side-box:hover {
-    border-left: solid 3px #f74842;
+.right-side-box#rsb1:hover {
+    border-left: solid px #f74842;
+    border-bottom: solid px #f74842;
+    border-top: solid px #f74842;
+    background-color: rgba(0, 0, 0, 0.733);
+    color: white;
+}
+.right-side-box#rsb2:hover {
+    border-left: solid px #f74842;
+    border-bottom: solid px #f74842;
+    border-top: solid px #f74842;
+    background-color:rgba(0, 0, 0, 0.733);
+    color: white;
 }
 .right-side-box-content {
     width: 65%;
     display: flex;
     flex-flow: column;
     justify-content: center;
-    margin-right: 1em;
+    margin-right: 8px;
 }
 .right-side-box-content h5 {
     margin-bottom: 16px;
     line-height: 1.25em;
+}
+.right-side-box-content p {
+    line-height: 1.25em;
+    font-weight: 300;
 }
 @media only screen and (min-width:831px) {
     .thesis-section span {
@@ -503,6 +620,16 @@ strong {
 }
 
 /* Mobile Thesis Section */
+@media only screen and (min-width: 830px) and (max-width: 1150px) {
+    .thesis-right-side p {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.5em;
+    }
+     .thesis-right-side h5 {
+        font-size: 20px;
+    }
+}
 @media only screen and (max-width:830px) {
     .thesis-right-side {
         display: none;
@@ -511,7 +638,7 @@ strong {
         padding-bottom: 16px;
     }
     .thesis-section span {
-        color: black;
+        color: rgba(0, 0, 0, 0.836);
     }
     .thesis-left-side {
         margin: 0;
@@ -534,9 +661,9 @@ strong {
 }
 /* footer section */
 .footer {
-    background-color: #2A83FF;
+    background-color: rgba(0, 0, 0, 0.733);
     color: white;
-    border-top: solid 1px rgba(128, 128, 128, 0.315);
+    border-top: solid px #F9564F;
     border-width: 100%;
     padding: 16px 24px 48px;
 }
