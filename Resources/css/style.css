@@ -3,7 +3,7 @@
 html {
    font-family: 'Work Sans', sans-serif; 
    overflow-x: hidden;
-   width: 100%;
+  
 }
 body {
     overflow-x: hidden;
@@ -138,6 +138,7 @@ strong {
     height: auto;
     align-items: center;
     width: auto;
+    box-sizing: border-box;
 }
 .sign-up h4 {
     font-family: 'work sans';
@@ -366,23 +367,31 @@ strong {
     }
 }
 @media only screen and (max-width: 500px) {
+    .info {
+        padding: 16px 0 0;
+        width: 100%;
+    }
     .info-images {
         display:none;
     }
     .feature-box {
         display:block;
+        padding: 16px;
+        box-sizing: border-box;
     }
     #fb1 {
         border-bottom: solid 1px rgba(128, 128, 128, 0.315);
     }
-    .info {
-        padding: 16px 16px 0;
-    }
     .feature-box-info a { 
-        margin-bottom: 64px;
+        padding-bottom: 32px;
+        align-items: center;
     }
     .feature-box-info h5 {
         margin-top: 32px;
+    }
+    #fb3 {
+        background-color: rgba(0, 0, 0, 0.733);
+        color: white;
     }
 }
 
@@ -642,7 +651,7 @@ strong {
         line-height: 1.5em;
     }
      .thesis-right-side h5 {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 @media only screen and (max-width:830px) {
