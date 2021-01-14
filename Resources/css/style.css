@@ -507,7 +507,10 @@ strong {
         font-weight: 500;
         color: black;
     }
-    .learn-box p,h6 {
+    .learn-box p {
+        display: none;
+    }
+    .learn-box h6 {
         display: none;
     }
     .learn-container {
