@@ -395,8 +395,15 @@ strong {
     .feature-box {
         justify-content: center;
     }
+    .feature-box-info {
+        width: 100%;
+    }
     .feature-box-info a {
         margin-bottom: 0;
+    }
+    .info-images {
+        min-width: 35%;
+        max-width: 35%;
     }
 }
 @media only screen and (max-width:950px) {
@@ -537,7 +544,6 @@ strong {
 /* Thesis Section */
 .thesis-section {
     background-color: white;
-    padding-right: 8px
 }
 .thesis-section h3 {
     font-weight: bold;
@@ -620,6 +626,9 @@ strong {
 @media only screen and (min-width:831px) {
     .thesis-section span {
         display: none;
+    }
+    .thesis-section {
+        padding-right: 8px;
     }
 }
 
