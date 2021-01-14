@@ -543,6 +543,7 @@ strong {
     font-weight: bold;
     text-align: center;
     padding: 32px;
+    color: rgba(0, 0, 0, 0.692);
 }
 .thesis-content {
     display: inline-flex;
@@ -641,7 +642,7 @@ strong {
         padding-bottom: 16px;
     }
     .thesis-section span {
-        color: rgba(0, 0, 0, 0.836);
+        color: rgba(0, 0, 0, 0.692);
     }
     .thesis-left-side {
         margin: 0;
