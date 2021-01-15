@@ -713,6 +713,11 @@ strong {
 }
 .footer a {
     color: white;
+    margin-left: 16px;
+    padding-bottom: 3px;
+}
+.footer a:hover {
+    border-bottom: solid 2px #f74842;
 }
 .footer-left {
     float: left;
@@ -720,9 +725,6 @@ strong {
 .footer-right {
     font-size: 12px;
     float: right;
-}
-.footer-right li a {
-    margin-left: 16px;
 }
 
 /* Mobile Footer Section */
