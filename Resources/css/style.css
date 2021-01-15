@@ -349,6 +349,15 @@ strong {
         background-color: rgba(0, 0, 0, 0.733);
         color: white;
     }
+    #fb1 {
+        padding-top: 16px;
+    }
+    .feature-box-info {
+        padding-bottom: 16px;
+    }
+    .info-features {
+        padding-top: 16px;
+    }
 }
 @media only screen and (max-width: 1185px) {
     .left-side p {
@@ -410,7 +419,6 @@ strong {
 @media only screen and (min-width:501px) and (max-width:950px) {
     .info {
         padding: 16px 24px;
-        width:;
     }
     .info-features {
         padding-top: 0;
@@ -426,8 +434,8 @@ strong {
     }
     .info-images {
         padding-left: 0;
-        width: 220px;
-        height: 220px;
+        width: 175px;
+        height: 175px;
     }
     #info-images-1 {
         padding-top: 16px;
