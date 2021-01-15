@@ -326,8 +326,10 @@ strong {
     line-height: 24px;
     font-weight: 300;
 }
-.feature-box-info a {
+.read-more {
     margin: 8px 0;
+}
+.feature-box-info a {
     color: #f74842;
     transition: text-underline-offset;
     text-underline-offset: .4em;
@@ -401,9 +403,9 @@ strong {
     .feature-box-info {
         padding: 0 8px;
     }
-    .feature-box-info a { 
-        padding-top: 8px;
-        padding-bottom: 8px;
+    .read-more { 
+        padding-top: 16px;
+        padding-bottom: 16px;
         align-items: center;
     }
     .feature-box-info h5 {
@@ -431,7 +433,7 @@ strong {
     .feature-box-info {
         width: 100%;
     }
-    .feature-box-info a {
+    .read-more {
         margin-bottom: 0;
     }
     .info-images {
